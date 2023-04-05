@@ -3,6 +3,11 @@
 # keyboard shortcut for inport write nodes render 
 # "shift+r"
 
+# to make this work:
+# Add the following to your menu.py with out the ''
+'''from writeReader import *
+nuke.menu('Nodes').addCommand('Golan gizmos/Golan/writeReader', "writeRender()", "shift+r") '''
+
 import nuke 
 
 def writeRender():
